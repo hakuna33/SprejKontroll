@@ -1,13 +1,14 @@
 ﻿using SprejKontroll.Models;
 using System;
 using System.Windows.Forms;
+using WindowsInput;
 
 namespace SprejKontroll
 {
     public partial class Form1 : Form
     {
+        private InputSimulator _simulator = new InputSimulator();
         private MouseVelocityHandler _velocityHandler;
-        private MouseHandler _mouseHandler = new MouseHandler();
 
         public Form1()
         {
@@ -39,7 +40,7 @@ namespace SprejKontroll
                 return;
             }
 
-            _mouseHandler.MoveMouse(velocity);
+            _simulator.Mouse.MoveMouseBy(velocity.X, velocity.Y);
         }
 
         private void button1_Click(object sender, EventArgs e)

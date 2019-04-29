@@ -61,7 +61,6 @@
     </Compile>
     <Compile Include="MouseVelocityHandler.cs" />
     <Compile Include="Models\Vector2.cs" />
-    <Compile Include="MouseHandler.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="MouseEventListener.cs" />
